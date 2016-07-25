@@ -17,6 +17,26 @@ body{
 	background-attachment: fixed;
 }
 
+a {
+  display: inline-block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 0.8em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 5px;
+}
+a:hover {
+	color: #e2f3e7;
+}
+
 .container {
 	padding-top: 200px;
 }
