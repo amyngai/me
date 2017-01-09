@@ -106,23 +106,14 @@ a:hover {
 	padding-bottom: 50px;
 }
 
-.footer{
-	font-family: 'Source Sans Pro', sans-serif;
-	color: white;
-	text-align: center;
-	padding-bottom: 30px
+.back {
+	font-size: 2.2em;
+	position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    color: white;
 }
-.footer::a{
- 	content: '';
-}
-.footer-title{
-	font-size: 12pt;
-    padding-bottom: 10px;
-}
-.footer-links{
-	font-size: 10pt;
-}
-
 
 /*decor*/
 .top-white{
@@ -159,17 +150,6 @@ a:hover {
 	width: 15px;
 	background-color: white;
 	z-index: 1000;
-}
-
-.topbanner{
-    position: fixed;
-    width: 100%;
-    height: 45px;
-    background-color: white;
-    color: rgba(102,202,183, 1);
-    text-align: center;
-    line-height: 47px;
-    z-index: 2000;
 }
 
 
