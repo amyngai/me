@@ -6,13 +6,13 @@ html, body {
 body{
 	background-size: auto 100%;
 	background-repeat: no-repeat;
-	background: rgba(180,211,131,1);
-	background: -moz-linear-gradient(top, rgba(180,211,131,1) 0%, rgba(164,218,195,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(180,211,131,1)), color-stop(100%, rgba(164,218,195,1)));
-	background: -webkit-linear-gradient(top, rgba(180,211,131,1) 0%, rgba(164,218,195,1) 100%);
-	background: -o-linear-gradient(top, rgba(180,211,131,1) 0%, rgba(164,218,195,1) 100%);
-	background: -ms-linear-gradient(top, rgba(180,211,131,1) 0%, rgba(164,218,195,1) 100%);
-	background: linear-gradient(to bottom, rgba(180,211,131,1) 0%, rgba(164,218,195,1) 100%);
+	background: rgba(155, 239, 208, 1);
+	background: -moz-linear-gradient(top, rgba(155, 239, 208, 1) 0%, rgba(102,202,183, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(155, 239, 208, 1)), color-stop(100%, rgba(102,202,183, 1)));
+	background: -webkit-linear-gradient(top, rgba(155, 239, 208, 1) 0%, rgba(102,202,183, 1) 100%);
+	background: -o-linear-gradient(top, rgba(155, 239, 208, 1) 0%, rgba(102,202,183, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(155, 239, 208, 1) 0%, rgba(102,202,183, 1) 100%);
+	background: linear-gradient(to bottom, rgba(155, 239, 208, 1) 0%, rgba(102,202,183, 1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4d383', endColorstr='#a4dac3', GradientType=0 );
 	background-attachment: fixed;
 }
@@ -21,7 +21,6 @@ a {
   display: inline-block;
   position: relative;
   color: white;
-  text-decoration: none;
 }
 a::after {
   content: '';
@@ -30,46 +29,49 @@ a::after {
   display: inline-block;
   height: 0.8em;
   width: 100%;
-  border-bottom: 1px solid;
   margin-top: 5px;
 }
 a:hover {
-	color: #e2f3e7;
+	color: rgba(102,202,183, 1);
 }
 
 .container {
+	padding-top: 250px;
+}
+@media screen and (min-width: 800px) {
+	.container {
 	padding-top: 200px;
+	}
 }
 
 .title-container{
-    position: absolute;
-	padding-left: 60px;
-	padding-right: 60px;
+    position: relative;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 200px;
+}
+@media screen and (min-width: 800px) {
+	.title-container{
+	    position: relative;
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 }
 .last-content{
-	padding-bottom: 200px;
 	padding-top: 25px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
 	.last-content{
 		padding-top: 0px;
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	.title-container{
-	    position: absolute;
-		padding-left: 200px;
-		padding-right: 200px;
-	}
-}
-
 .title{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
 	.title{
 	    font-size: 28px;
 	}
@@ -81,12 +83,46 @@ a:hover {
     color: white;
     line-height: 1.2em;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
 	.content{
 	    font-size: 2.7em;
 	    line-height: 1.3em;
 	}
 }
+
+.event-container{
+    position: relative;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+@media screen and (min-width: 800px) {
+	.event-container{
+	    position: relative;
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+}
+.event-last-content{
+	padding-bottom: 50px;
+}
+
+.footer{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	text-align: center;
+	padding-bottom: 30px
+}
+.footer::a{
+ 	content: '';
+}
+.footer-title{
+	font-size: 12pt;
+    padding-bottom: 10px;
+}
+.footer-links{
+	font-size: 10pt;
+}
+
 
 /*decor*/
 .top-white{
@@ -95,6 +131,7 @@ a:hover {
 	width: 100%;
 	height: 15px;
 	background-color: white;
+	z-index: 1000;
 }
 
 .bottom-white{
@@ -103,6 +140,7 @@ a:hover {
 	width: 100%;
 	height: 15px;
 	background-color: white;
+	z-index: 1000;
 }
 
 .left-white{
@@ -111,6 +149,7 @@ a:hover {
 	height: 100%;
 	width: 15px;
 	background-color: white;
+	z-index: 1000;
 }
 
 .right-white{
@@ -119,4 +158,39 @@ a:hover {
 	height: 100%;
 	width: 15px;
 	background-color: white;
+	z-index: 1000;
+}
+
+.topbanner{
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    color: rgba(102,202,183, 1);
+    text-align: center;
+    line-height: 47px;
+    z-index: 2000;
+}
+
+
+/*social links*/
+.social-div{
+	text-align: right;
+}
+
+.social-links{
+    color: rgba(102,202,183, 1);
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.social-div a:hover {
+	background: #e2f3e7;
+	color: rgba(102,202,183, 1);
 }
