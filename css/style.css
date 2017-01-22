@@ -36,7 +36,7 @@ a:hover {
 }
 
 .container {
-	padding-top: 250px;
+	padding-top: 100px;
 }
 @media screen and (min-width: 800px) {
 	.container {
