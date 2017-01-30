@@ -179,3 +179,8 @@ a:hover {
 	background: #e2f3e7;
 	color: rgba(102,202,183, 1);
 }
+
+/*utilities*/
+.bringtotop{
+	z-index: 2000;
+}
